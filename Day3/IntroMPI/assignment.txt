@@ -1,0 +1,11 @@
+1. Write a MPI program to add ranks of all odd-ranked processes and collect & print the result at rank 1 process. Similarly, in the same program add ranks of all even-ranked processes and collect & print the result at rank 0 process.
+
+2. In the pi program (5_pi_pt_to_pt.c) use wildcards MPI_ANY_SOURCE & MPI_ANY_TAG at the receiver side when it is collecting local results of mypi from different processes.
+
+3. Parallelize given matrix-serial.c code using MPI. You may have full A,B,C matrices with each MPI process.
+
+For Ready Reference:
+
+Compilation: mpiicc test.c -o test.out
+mpiexec.hydra -n 4 ./test.out
+
