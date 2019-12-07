@@ -25,18 +25,14 @@ void reference(double** A, double* x, double* y) {
 void optimized(double** A, double* x, double* y) {
   // SB: Write your OpenMP code here
   int i, j, tid;
-  #pragma omp parallel shared (A, x)private(i, j,tid)
+  #pragma omp parallel shared (i, A, x)private(j,tid)
 {
-  int p = omp_get_num_threads();
   tid = omp_get_thread_num();
   #pragma omp for 
-  for (i = tid; i < N; i=i+p) {
- // if(tid == 0) std::cout << i << "\t";
-    for (j = i; j < N; j=j+p) {
- // if(tid == 0) std::cout << j << "\t";
+  for (i = 0; i < N; i++) {
+    for (j = 0; j < N; j++) {
       y[i] = y[i] + A[i][j] * x[j];
     }
- // cout << "\n";
   }
 }
 }

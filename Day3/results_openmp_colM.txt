@@ -1,0 +1,46 @@
+Row-Wise Striped Matrix-Vector Multiplication with OpenMP\n
+\nOMP_NUM_THREADS =1
+Time for reference version: 1.01285 seconds
+No differences found between base and test versions
+Time for OpenMP version: 1.17236 seconds
+0.86394
+\nOMP_NUM_THREADS =2
+Time for reference version: 1.06130 seconds
+No differences found between base and test versions
+Time for OpenMP version: 0.83791 seconds
+1.26661
+\nOMP_NUM_THREADS =3
+Time for reference version: 1.01221 seconds
+No differences found between base and test versions
+Time for OpenMP version: 0.65435 seconds
+1.54690
+\nOMP_NUM_THREADS =4
+Time for reference version: 1.01431 seconds
+No differences found between base and test versions
+Time for OpenMP version: 0.58665 seconds
+1.72899
+\nOMP_NUM_THREADS =8
+Time for reference version: 1.01134 seconds
+No differences found between base and test versions
+Time for OpenMP version: 0.53959 seconds
+1.87427
+\nOMP_NUM_THREADS =16
+Time for reference version: 1.01150 seconds
+No differences found between base and test versions
+Time for OpenMP version: 0.89743 seconds
+1.12711
+\nOMP_NUM_THREADS =20
+Time for reference version: 1.01093 seconds
+No differences found between base and test versions
+Time for OpenMP version: 1.03286 seconds
+0.97877
+\nOMP_NUM_THREADS =24
+Time for reference version: 1.01306 seconds
+No differences found between base and test versions
+Time for OpenMP version: 1.26285 seconds
+0.80220
+\nOMP_NUM_THREADS =40
+Time for reference version: 1.01125 seconds
+No differences found between base and test versions
+Time for OpenMP version: 5.22976 seconds
+0.19336
