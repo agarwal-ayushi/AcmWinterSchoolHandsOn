@@ -35,8 +35,10 @@ int main(int argc, char **argv)
 omp_set_num_threads(4);
 #pragma omp parallel private(iam)
         {
-                iam = omp_get_thread_num();
-                printf("Hello World is Printed By Process %d and Threadid %d\n", MyRank, iam);
+		if(MyRank % 2 == 0) {
+			iam = omp_get_thread_num();
+                	if (iam == 0) printf("Hello World is Printed By Process %d and Threadid %d\n", MyRank, iam);
+		}
         }
 
         /* MPI - Termination */
